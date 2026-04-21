@@ -50,7 +50,7 @@ Dataset Organization
 
 This project uses a BraTS-style case-wise folder structure.
 
-Expected directory tree
+##Expected directory tree
 
 dataset/
 ├── brats2020/
@@ -76,7 +76,7 @@ dataset/
 
 
 
-Required files for each case
+##Required files for each case
 
 Each case folder should contain the following five files:
 
@@ -92,7 +92,7 @@ BraTS20_Training_008/
 ├── BraTS20_Training_008_t2.nii.gz
 ├── BraTS20_Training_008_flair.nii.gz
 └── BraTS20_Training_008_seg.nii.gz
-Notes
+##Notes
 brats2020/ can be used for the original BraTS2020 dataset.
 brats2020_S0/ is used for the degraded / blurred dataset in this project.
 If your degraded dataset folder uses another name, such as brats2020_S2, please modify the dataset path accordingly.
@@ -100,7 +100,7 @@ The repository assumes that train, val, and test are already split into separate
 
 
 
-Environment
+##Environment
 
 Recommended environment:
 
@@ -112,13 +112,13 @@ TensorBoard
 timm
 einops
 
-Example installation:
+##Example installation:
 
 pip install torch torchvision torchaudio
 pip install monai nibabel numpy tensorboard timm einops
 
 
-Training
+##Training
 
 Please first prepare the dataset according to the folder structure above.
 
@@ -134,7 +134,7 @@ python main.py \
   --end-epoch 250
 
 
-Testing
+##Testing
 
 Example testing command:
 
@@ -146,7 +146,7 @@ python test.py \
   --tta True
 
 
-The testing script will:
+##The testing script will:
 
 load the trained best model
 perform sliding-window inference
