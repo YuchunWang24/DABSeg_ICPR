@@ -1,4 +1,3 @@
-````markdown
 # DABSeg
 
 Official implementation of **DABSeg**, a degradation-aware joint blur-segmentation framework for multimodal 3D brain tumor MRI segmentation.
@@ -49,7 +48,6 @@ DABSeg_ICPR/
 │   ├── utils.py
 │   └── README.md
 └── README.md
-````
 
 ---
 
